@@ -3,10 +3,13 @@ background: #867070;
 font-family:monospace;
 color: #2C3639;
 align-content: center;
+font-size: 14px;
 }
 
 img{
     width:100%;
+    border: 5px solid;
+
 }
 
 .main{
