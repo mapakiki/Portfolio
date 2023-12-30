@@ -7,7 +7,7 @@ align-content: center;
 
 .main{
     align-items: center;
-    margin: 100px;
+    margin: 20%;
 }
 h1{
     color: #4F6F52;
@@ -34,5 +34,4 @@ div[draggable]{
 a{
     text-decoration: none;
     text-shadow:#2C3639;
-    
 }
