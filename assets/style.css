@@ -1,13 +1,32 @@
-html{
-background: rgb(217, 243, 213);
+*{
+background: #F2F1EB;
 font-family:monospace;
+color: #2C3639;
 }
 h1{
-    color:rgb(8, 46, 2)
+    color: #4F6F52;
+    font-size: 5rem;
+    text-align: center;
 }
 h2{
-    color:rgb(8, 46, 2)
+    color:#88AB8E;
 }
 h3{
-    color:rgb(8, 46, 2)
+    color:#88AB8E;
+}
+.erwartung{
+ list-style-type: none;
+ font-family: cursive;
+ font-size: 1.1rem;
+ margin-bottom: 10%;
+ margin-top: 10%;
+ text-align: center;
+}
+div[draggable]{
+    color: #5F6F52;
+}
+a{
+    text-decoration: none;
+    text-shadow:#2C3639;
+    
 }
