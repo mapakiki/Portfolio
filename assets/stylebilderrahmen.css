@@ -1,0 +1,36 @@
+*{
+background: #867070;
+font-family:monospace;
+color: #2C3639;
+align-content: center;
+}
+
+img{
+    width:100%;
+}
+
+.main{
+    align-items: center;
+    margin: 2% 15% ;
+
+}
+h1{
+    color: #E4D0D0;
+    font-size: 4rem;
+    text-align: center;
+}
+.zitat{
+    color: #EAC7C7;
+}
+hr{
+    border: 0;
+height: 5px;
+background-image: linear-gradient(to right,
+rgba(0,0,0,0),
+#EAC7C7,
+rgba(0,0,0,0));
+}
+a{
+    text-decoration: none;
+    text-shadow:#2C3639;
+}

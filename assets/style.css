@@ -8,6 +8,7 @@ align-content: center;
 .main{
     align-items: center;
     margin: 20%;
+    margin-top:0;
 }
 h1{
     color: #4F6F52;
