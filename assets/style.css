@@ -2,6 +2,12 @@
 background: #F2F1EB;
 font-family:monospace;
 color: #2C3639;
+align-content: center;
+}
+
+.main{
+    align-items: center;
+    margin: 100px;
 }
 h1{
     color: #4F6F52;
@@ -18,8 +24,8 @@ h3{
  list-style-type: none;
  font-family: cursive;
  font-size: 1.1rem;
- margin-bottom: 10%;
- margin-top: 10%;
+ margin-bottom: 2%;
+ margin-top: 2%;
  text-align: center;
 }
 div[draggable]{
