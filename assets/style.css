@@ -8,8 +8,7 @@ font-size: 14px;
 
 .main{
     align-items: center;
-    margin: 20%;
-    margin-top:0;
+    margin: 2% 15%;
 }
 h1{
     color: #4F6F52;
@@ -36,4 +35,7 @@ div[draggable]{
 a{
     text-decoration: none;
     text-shadow:#2C3639;
+}
+img{
+    width: 100%;
 }
