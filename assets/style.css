@@ -29,6 +29,10 @@ h3{
  margin-top: 2%;
  text-align: center;
 }
+.erwartung > div{
+    display: inline-block;
+    margin: 20px;
+}
 div[draggable]{
     color: #5F6F52;
 }
