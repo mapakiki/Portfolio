@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <style>
+    /* CSS Code */
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    div{
+        padding:2px;
+    }
+    .one{
+        background-color: aquamarine;
+    }
+    .two{
+        background-color: bisque;
+    }
+    .three{
+        background-color: rgb(215, 186, 237);
+    }
+
+    .container2{
+        height: 80vh;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .item{
+        background-color: rgba(7, 153, 153, 0.445);
+        font-size: 5rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cowboy{
+        background-color: rgb(88, 88, 240);
+        /*grid-column: span 2; */
+        grid-area: 1/1/2/3;
+        border-radius: 50px;
+    }
+    .astronaut{
+        background-color: rgb(26, 183, 131);
+        order:1;
+        /*grid-column: span 2;*/
+        grid-area: 2/1/3/3;
+        border-radius: 50px;
+    }
+    .book{
+        background-color: #8a2be280;
+        /*grid-row: span 2;*/
+        grid-area: 1/2/3/4;
+        /*grid-area: 1/3/-1/-1;*/
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>Willkommen</header>
+  <div class="nav">Naviheader
+    <a href="http://www.google.com">Search on Google</a>
+    <a href="http://www.cupcake.com">Eat Cupcake</a>
+    <a href="http://www.my-hygge.cde">Hygge</a>
+  </div>
+  <div class="container">
+    <div class="one">
+       <p class="text">Cupcake ipsum dolor sit amet bonbon gingerbread dragée carrot cake. Sugar plum croissant croissant pie tart muffin gummies tiramisu. Marshmallow brownie cake sugar plum chocolate bar icing jelly. Brownie marshmallow gummi bears cake icing dragée marzipan chocolate cake. Cake bonbon sugar plum macaroon cotton candy cupcake. Tootsie roll lollipop jelly-o brownie cupcake topping sesame snaps gummi bears. Sweet gummi bears muffin tiramisu gummies shortbread biscuit dragée jelly. Halvah chocolate bar jelly-o powder tart chocolate brownie pie donut. Pie cupcake cupcake cake topping gummi bears jelly. Gummies gingerbread carrot cake chocolate bar chocolate cake.
+
+        Chocolate ice cream donut fruitcake gingerbread lollipop. Ice cream cheesecake toffee chocolate bar cotton candy. Shortbread biscuit chocolate bar dragée biscuit toffee cupcake chocolate bar marshmallow. Bonbon soufflé chupa chups topping gummi bears jelly beans brownie cotton candy. Shortbread dragée bear claw cake carrot cake. Donut brownie gummi bears toffee wafer sweet pudding cookie sweet roll. Cotton candy apple pie toffee tootsie roll soufflé cake.</p> 
+    </div>
+    <div class="two">
+      <p class="text">Cotton candy pudding dragée dragée jelly beans jujubes. Toffee candy liquorice sweet cheesecake dessert candy canes. Jujubes shortbread brownie topping bonbon muffin apple pie. Cake candy canes donut candy cookie. Chocolate bar cotton candy jelly beans chocolate cake pastry. Macaroon macaroon sweet roll lollipop sweet. Sesame snaps dessert bonbon candy canes cake macaroon sweet gummies.
+
+        Marshmallow cookie caramels carrot cake topping cupcake carrot cake wafer. Gingerbread cookie wafer jelly-o tart lemon drops cookie chupa chups. Topping cotton candy cheesecake bonbon cake tart jelly-o danish. Toffee sugar plum wafer ice cream tart marzipan macaroon. Croissant dessert macaroon tart bonbon liquorice sugar plum. Chocolate bar powder muffin tootsie roll chocolate bar bear claw pudding gummi bears. Cake cookie oat cake jelly beans marzipan lollipop.</p> 
+   </div>
+   <div class="three">
+    <p class="text">Biscuit marzipan danish donut oat cake lemon drops carrot cake cotton candy. Sesame snaps jelly beans cookie apple pie jujubes. Tart jujubes shortbread pastry pastry carrot cake. Donut lemon drops marzipan pudding candy canes bonbon. Oat cake biscuit tootsie roll cupcake tart sugar plum cotton candy marzipan. Cotton candy chocolate cake chocolate bar marshmallow dragée jelly croissant. Wafer jelly sugar plum sweet roll chocolate bar. Pastry halvah topping chocolate icing chocolate bar chocolate pastry.
+
+      Bear claw jelly beans gingerbread croissant biscuit pastry chupa chups jelly-o. Ice cream topping candy macaroon soufflé danish pastry apple pie danish. Candy canes shortbread brownie cotton candy chocolate bar halvah. Croissant chupa chups chocolate bar topping lemon drops gummi bears lemon drops cheesecake. Toffee sweet roll carrot cake dragée danish powder powder sweet. Apple pie shortbread caramels lemon drops chupa chups. Cake cookie sweet sweet dragée donut. Bonbon candy canes candy carrot cake caramels chocolate cake cotton candy cookie.
+      
+      Chupa chups jelly carrot cake fruitcake cheesecake donut. Chupa chups pie cupcake jelly beans sweet roll pudding pie croissant cotton candy. Candy canes cookie lemon drops cupcake tart lemon drops chupa chups chupa chups lollipop. Tart danish chupa chups tiramisu bear claw icing chocolate cake dessert biscuit. Dragée tart cake bonbon pudding soufflé pie wafer sesame snaps. Ice cream sesame snaps soufflé cheesecake shortbread tiramisu gingerbread. Cake bonbon cake donut shortbread. Topping ice cream liquorice muffin sugar plum.</p> 
+ </div>
+</div>
+<p>Ein anderes kleines Grid mit Flexinhalten</p>
+<div class="container2">
+    <div class="item cowboy">🤠</div>
+    <div class="item astronaut">🧑‍🚀</div>
+    <div class="item book">📖</div>
+</div>
+  <footer>
+        <a href="./index.html">Zurück zur Übersicht</a>
+  </footer>  
+
+</body>
+
+</html>
