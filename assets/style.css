@@ -39,10 +39,12 @@ h3{
     padding: 20px;
     box-shadow: 0px 4px 24px rgba(22, 65, 147, 0.15), 0px 3px 8px rgba(22, 65, 147, 0.05);
     transition:all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 4px;
 
 }
 .erwartung.animation:hover{
     /*flex:1 5%; */
+    font-size: 1.2rem;
     box-shadow:0 14px 28px rgba(29, 29, 29, 0.25), 0 10px 10px rgba(48, 47, 47, 0.22);
 }
 div[draggable]{
@@ -54,4 +56,11 @@ a{
 }
 img{
     width: 100%;
+}
+footer{
+    padding-top: 10%;
+}
+blockquote[cite]::after{
+    content: " (Quelle: " attr(cite) ")"; 
+    font-size:0.8rem;
 }
