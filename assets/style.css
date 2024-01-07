@@ -4,6 +4,8 @@ font-family:monospace;
 color: #2C3639;
 align-content: center;
 font-size: 14px;
+margin: 0px;
+padding: 0px;
 }
 
 .main{
@@ -63,4 +65,7 @@ footer{
 blockquote[cite]::after{
     content: " (Quelle: " attr(cite) ")"; 
     font-size:0.8rem;
+}
+.container.privat{
+    margin:10%;
 }
