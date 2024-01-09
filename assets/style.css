@@ -1,13 +1,31 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+@font-face {
+ font-family: "Gracial";
+ src:url(./GlacialIndifference-Regular.otf) format("opentype");
+ }
+
+  @font-face {
+    font-family: "Gracial";
+    font-weight: bold;
+    src:url(./GlacialIndifference-Bold.otf) format("opentype");
+  }
+
+
+body{
 background: #F2F1EB;
-font-family:monospace;
+font-family: 'Gracial', monospace;
 color: #2C3639;
 align-content: center;
 font-size: 14px;
 margin: 0px;
 padding: 0px;
 }
-
+div{
+    padding: 10px;
+}
+header.index{
+    color: white;
+}
 .main{
     align-items: center;
     margin: 2% 15%;
@@ -16,16 +34,19 @@ h1{
     color: #4F6F52;
     font-size: 5rem;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
 h2{
     color:#88AB8E;
+    font-family: 'Dancing Script', cursive;
 }
 h3{
     color:#88AB8E;
+    font-family: 'Dancing Script', cursive;
 }
 .container.erwartung{
  font-family: cursive;
- font-size: 1.1rem;
+ font-size: 1.3rem;
  margin-bottom: 2%;
  margin-top: 2%;
  display: flex;
@@ -34,7 +55,6 @@ h3{
  flex-wrap: wrap;
  flex-direction: row;
 
-
 }
 .erwartung.animation{
     display: inline-block;
@@ -42,25 +62,52 @@ h3{
     box-shadow: 0px 4px 24px rgba(22, 65, 147, 0.15), 0px 3px 8px rgba(22, 65, 147, 0.05);
     transition:all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 4px;
-
+    color: #5F6F52;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
 }
 .erwartung.animation:hover{
     /*flex:1 5%; */
     font-size: 1.2rem;
     box-shadow:0 14px 28px rgba(29, 29, 29, 0.25), 0 10px 10px rgba(48, 47, 47, 0.22);
 }
-div[draggable]{
-    color: #5F6F52;
-}
+
 a{
     text-decoration: none;
     text-shadow:#2C3639;
+    color:#2C3639;
 }
 img{
     width: 100%;
 }
 footer{
     padding-top: 10%;
+    /*position: relative; 
+    border: 5px solid red;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.beschriftung{
+    background-color: silver;
+    background-color: hsla(0, 0%, 100%, 0);
+    order: 1;
+    grid-area: 1 / 1/ 2/ 2;
+    list-style: none;
+    /*position: absolute;
+    bottom: 20;
+    width: 100%;
+    line-height: 2em;
+    text-align: center; */
+
+}
+li{
+    list-style: none;
+}
+img.back{
+   grid-area: 1 /1 /-1 /-1;
+   order: -1;
 }
 blockquote[cite]::after{
     content: " (Quelle: " attr(cite) ")"; 
@@ -68,4 +115,9 @@ blockquote[cite]::after{
 }
 .container.privat{
     margin:10%;
+}
+.modification{
+    grid-area: -2 /-2 /-1 /-1;
+    align-self: end;
+    margin: 10px;
 }
